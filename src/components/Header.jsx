@@ -4,6 +4,6 @@ function Header() {
             <h1>My dictionary</h1>
         </header>
     );
-};
+}
 
 export default Header;

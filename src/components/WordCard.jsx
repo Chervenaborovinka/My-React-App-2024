@@ -1,8 +1,18 @@
-function WordCard({ word }) {
+import Button from './Button';
+
+function WordCard({ id, word, transcription, translation, theme }) {
     return (
-        <div className="wordCard">
-            <p>{word}</p>
-        </div>
+        <tr className="wordCard">
+            <td>{id}</td>
+            <td>{word}</td>
+            <td>{transcription}</td>
+            <td>{translation}</td>
+            <td>{theme}</td>
+            <td>
+                <Button text='Редактировать' mode="original" />
+                <Button text='Удалить' mode="original" />
+            </td>
+        </tr>
     );
 }
 
