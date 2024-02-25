@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import words from '../data/words'
-
+import words from '../data/words';
+import "./WordList.module.css";
 
 const WordList = () => {
     const [editing, setEditing] = useState({});
